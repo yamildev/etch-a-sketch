@@ -1,0 +1,60 @@
+/*
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+} 
+*/
+.board {
+  display: grid;
+  height: 500px;
+  width: 500px; 
+  background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html {
+
+  /* footer support */
+  /*https://css-tricks.com/absolute-positioning-inside-relative-positioning/
+  - Absolute Positioning (footer) Inside Relative Positioning (html)    */
+  position: relative; /**/
+
+  min-height: 100%;
+}
+
+
+.footer {             
+  /*
+  - al atribuirle la propiedad position: relative a html, permite que sus childs utilicen position:
+  absolute.
+  - https://developer.mozilla.org/en-US/docs/Web/CSS/position : 
+  The element is removed from the normal document flow, and no space is created for the element
+  in the page layout. It is positioned relative to its closest positioned ancestor, if any;
+  otherwise, it is placed relative to the initial containing block
+  */  
+  position: absolute;  
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+}
